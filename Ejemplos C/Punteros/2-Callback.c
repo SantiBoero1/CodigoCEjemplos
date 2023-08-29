@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+//Declaro funciones "callback" (que serán llamadas por otra función al pasarlas por parámetro)
 
 float sumar(float num1, float num2){
     return num1 + num2;
@@ -22,7 +25,13 @@ void operar_imprimir(float num1, float num2, float (*operar) (float, float)){
     printf("El resultado de la operación es %f.\n",operar(num1, num2));
 }
 
-int main(){
-    operar_imprimir(5, 4, multiplicar);
+int main(int argc, char* argv[]){
+    switch(argv[1][0]){
+        case 'S': operar_imprimir(atof(argv[2]), atof(argv[3]), sumar); break;
+        case 'R': operar_imprimir(atof(argv[2]), atof(argv[3]), restar); break;
+        case 'M': operar_imprimir(atof(argv[2]), atof(argv[3]), multiplicar); break;
+        case 'D': operar_imprimir(atof(argv[2]), atof(argv[3]), dividir); break;
+        default: printf("Ingresar una operación válida.\n");
+    }
     return 0;
 }
