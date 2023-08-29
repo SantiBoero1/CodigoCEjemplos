@@ -1,0 +1,21 @@
+struct empleado /* creamos una estructura llamado empleado*/
+{
+	char nombre_empleado[25];
+	char direccion[25];
+	char ciudad[20];
+	char provincia[20];
+	long int codigo_postal;
+	double salario;
+};
+
+
+
+struct cliente /* creamos una estructura llamada cliente */
+{
+	char nombre_cliente[25];
+	char direccion[25];
+	char ciudad[20];
+	char provincia[20];
+	long int codigo_postal;
+	double saldo;
+}; 
