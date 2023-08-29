@@ -1,4 +1,4 @@
-struct empleado /* creamos una estructura llamado empleado*/
+struct empleado // Creamos una estructura llamado empleado
 {
 	char nombre_empleado[25];
 	char direccion[25];
@@ -10,7 +10,7 @@ struct empleado /* creamos una estructura llamado empleado*/
 
 
 
-struct cliente /* creamos una estructura llamada cliente */
+struct cliente // Creamos una estructura llamada cliente
 {
 	char nombre_cliente[25];
 	char direccion[25];
@@ -19,3 +19,5 @@ struct cliente /* creamos una estructura llamada cliente */
 	long int codigo_postal;
 	double saldo;
 }; 
+
+// Fijemonos que ambas estructuras tienen en comun muchos datos, podriamos abstraer en una estructura comun esto
