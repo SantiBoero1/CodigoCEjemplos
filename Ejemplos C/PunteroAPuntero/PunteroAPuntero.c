@@ -13,14 +13,30 @@ int main() {
 
     **ptr_to_ptr = 10; // Modificamos el valor a través del puntero a puntero
 
-    printf("Variable modificada con puntero a puntero: %d\n", variable);
+    printf("Variable modificada con puntero a puntero: %d\n\n", variable);
     
     // ¿Que pasa si modifico ahora valor? ¿Se modifican los punteros?
 
-    variable = 8;
+    // variable = 8;
 
-    printf("Variable puntero: %d\n", *ptr);
-    printf("Variable puntero a puntero: %d\n", **ptr_to_ptr);
+    //printf("Variable puntero: %d\n", *ptr);
+    //printf("Variable puntero a puntero: %d\n\n", **ptr_to_ptr);
+    
+
+
+    /* ¿Y como se que el puntero realmente apunta al otro? Fijemonos
+
+    printf("Direccion de memoria en la que esta la variable: %d\n\n", &variable);
+
+    printf("Direccion a la que apunta el puntero: %d\n", ptr);
+    printf("Direccion del puntero: %d\n\n", &ptr);
+
+    printf("Direccion a la que apunta el puntero a puntero: %d\n", ptr_to_ptr);
+    printf("Direccion del puntero a puntero: %d\n\n", &ptr_to_ptr);
+    
+    */
+    
+    
 
     return 0;
 }
