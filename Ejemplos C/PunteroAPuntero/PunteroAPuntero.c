@@ -15,7 +15,7 @@ int main() {
 
     printf("Variable modificada con puntero a puntero: %d\n\n", variable);
     
-    // ¿Que pasa si modifico ahora valor? ¿Se modifican los punteros?
+    // ¿Que pasa si modifico ahora variable? ¿Se modifican los punteros?
 
     // variable = 8;
 
